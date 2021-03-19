@@ -1,11 +1,5 @@
-# JavaScript Chatbot 
+# AMADEUS JS ver.
 
-This is a very simple "chatbot" using nothing but JavaScript, HTML, & CSS. I put this in quotes because chatbots these days are way more complex - this is an exercise in vanilla JS loops and conditionals, not AI.
+공부용으로 만든
+게임 「슈타인즈 게이트」에 나오는 AI 「아마데우스」의 JS판 클론.
 
-I hope it makes a good intro for anyone interested in chatbots and frontend fundamentals.
-
-Enjoy!
-
-[Demo](https://sylviapap.github.io/chatbot/)
-
-[Blog post](https://dev.to/sylviapap/make-a-simple-chatbot-with-javascript-1gc)
