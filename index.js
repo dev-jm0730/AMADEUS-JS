@@ -67,7 +67,7 @@ function addChat(input, product) {
   let userDiv = document.createElement("div");
   userDiv.id = "user";
   userDiv.className = "user response";
-  // userDiv.innerHTML = `<img src="user.png" class="avatar"><span>${input}</span>`;
+  userDiv.innerHTML = `<span>${input}</span>`; // <img src="user.png" class="avatar">
   messagesContainer.appendChild(userDiv);
 
   let botDiv = document.createElement("div");
@@ -79,7 +79,7 @@ function addChat(input, product) {
   botDiv.className = "bot response";
   botText.innerText = "Typing...";
   botDiv.appendChild(botText);
-  botDiv.appendChild(botImg);
+  // botDiv.appendChild(botImg);
   messagesContainer.appendChild(botDiv);
   messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
