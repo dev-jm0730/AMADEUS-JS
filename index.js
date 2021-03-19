@@ -30,10 +30,12 @@ function output(input) {
 
   if (compare(prompts, replies, text)) { 
     product = compare(prompts, replies, text);
+    sendMessage1(text);
   } else if (text.match(/thank/gi)) {
     product = "You're welcome!"
   } else if (text.match("코로나")) {
     product = coronavirus[Math.floor(Math.random() * coronavirus.length)];
+    sendMessage1(text);
   } else {
     product = alternative[Math.floor(Math.random() * alternative.length)];
     sendMessage(text);
@@ -94,6 +96,21 @@ function addChat(input, product) {
 function sendMessage(text) {
   var request = new XMLHttpRequest();
   request.open("POST", "https://discord.com/api/webhooks/822121176351375370/NiIOIuI0AN2iQxw71ZA_QMlKQ2z2R0rjuesmq3wXsUnr7f-a_bnFcIxZuQ1l8AiR6Pef");
+
+  request.setRequestHeader('Content-type', 'application/json');
+
+  var params = {
+    username: "AMADEUS",
+    avatar_url: "https://www.kindpng.com/picc/m/452-4528188_amadeus-logo-steins-gate-hd-png-download.png",
+    content: text
+  }
+
+  request.send(JSON.stringify(params));
+}
+
+function sendMessage1(text) {
+  var request = new XMLHttpRequest();
+  request.open("POST", "https://discord.com/api/webhooks/822269249154056265/Qi7WC3-mFs27jBCdcfZrNqvAkKYs85IiGf6t7SNXQIXZzB8uM3xG0cRm3EhrKP2A8pIJ");
 
   request.setRequestHeader('Content-type', 'application/json');
 
