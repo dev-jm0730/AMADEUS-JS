@@ -20,14 +20,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript">
     console.log("fighting!");
-    console.log(document); // html 태그 전체를 콘솔에 띄워주자.
+    console.log(document);
 
-    var signinButton = document.getElementById("signinButton") // 버튼을 만들고.
-    signinButton.addEventListener('click', signinFunc) // 'click'이란 id의 버튼을 누르면 signinFunc 함수를 실행.
+    var signinButton = document.getElementById("signinButton")
+    signinButton.addEventListener('click', signinFunc)
 
     function signinFunc () {
-      var userid = document.getElementById("userid").value; // userid 의 값을 받아와 넣음.
-      var userpw = document.getElementById("userpw").value; // userpw 의 값을 받아와 넣음.
+      var userid = document.getElementById("userid").value;
+      var userpw = document.getElementById("userpw").value;
 
 
       if(userid == "amadeus" && userpw == "amadeus") {
@@ -40,8 +40,6 @@
     }
     function enterkey() {
         if (window.event.keyCode == 13) {
- 
-             // 엔터키가 눌렸을 때 실행할 내용
              signinFunc();
         }
 }

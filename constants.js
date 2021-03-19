@@ -1,4 +1,3 @@
-// Options the user could type in
 const prompts = [
   ["안녕"],
   ["기분이 어때", "하우 얼 유", "하와유"],
@@ -19,7 +18,6 @@ const prompts = [
   ["재밌게 본 영화가 뭐야", "재밌는 영화 있어", "재밌게 본 영화 있어", "재밌는 영화"]
 ]
 
-// Possible responses, in corresponding order
 
 const replies = [
   ["안녕하세요!", "안녕하세요?"],
@@ -38,12 +36,9 @@ const replies = [
   ["저는 신카이 마코토 감독님의 작품인 「너의 이름은.」을 굉장히 감명깊게 봤어요!"]
 ]
 
-// Random for any other user input
 
 const alternative = [
   "제가 모르는 말이네요. 답변을 하지 못해 죄송해요."
 ]
-
-// Whatever else you want :)
 
 const coronavirus = ["꼭 집에 있으세요.", "꼭 마스크 끼세요.", "사회적 거리두기를 실천해 주세요.", "방역수칙을 준수하여 주세요."]
