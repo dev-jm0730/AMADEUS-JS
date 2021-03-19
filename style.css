@@ -18,7 +18,7 @@ body {
   font-family: 'GongGothicMedium';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-	background-color: rgba(223, 242, 247, .5);
+	background-image : url('./bg.jpg');
 	height: 100%;
 	margin: 0;
 }
