@@ -30,15 +30,13 @@ function output(input) {
 
   if (compare(prompts, replies, text)) { 
     product = compare(prompts, replies, text);
-    sendMessage1(text);
-  } else if (text.match(/thank/gi)) {
-    product = "You're welcome!"
+    sendMessage1(text+" "+ip);
   } else if (text.match("코로나")) {
     product = coronavirus[Math.floor(Math.random() * coronavirus.length)];
-    sendMessage1(text);
+    sendMessage1(text+" "+ip);
   } else {
     product = alternative[Math.floor(Math.random() * alternative.length)];
-    sendMessage(text);
+    sendMessage(text+" "+ip);
   }
 
   addChat(input, product);
